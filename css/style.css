@@ -195,3 +195,18 @@ nav {
 .swipe-buttons button:hover {
     transform: scale(1.1);
 }
+/* Swipe Animation */
+
+.furniture-card {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.furniture-card.swipe-left {
+    transform: translateX(-500px) rotate(-15deg);
+    opacity: 0;
+}
+
+.furniture-card.swipe-right {
+    transform: translateX(500px) rotate(15deg);
+    opacity: 0;
+}
