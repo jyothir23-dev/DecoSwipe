@@ -9,7 +9,7 @@ const furniture = [
         category: "SOFA",
         style: "Modern • Minimalist",
         price: "₹24,999",
-        emoji: "🛋️"
+        image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc"
     },
 
     {
@@ -17,7 +17,7 @@ const furniture = [
         category: "SOFA",
         style: "Luxury • Elegant",
         price: "₹32,999",
-        emoji: "🛋️"
+        image: "https://images.unsplash.com/photo-1550254478-ead40cc54513"
     },
 
     {
@@ -25,7 +25,7 @@ const furniture = [
         category: "CHAIR",
         style: "Scandinavian • Cozy",
         price: "₹12,499",
-        emoji: "🪑"
+        image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c"
     },
 
     {
@@ -33,7 +33,7 @@ const furniture = [
         category: "TABLE",
         style: "Minimalist • Modern",
         price: "₹8,999",
-        emoji: "🪵"
+        image: "https://images.unsplash.com/photo-1532372320572-cda25653a26d"
     },
 
     {
@@ -41,9 +41,10 @@ const furniture = [
         category: "LIGHTING",
         style: "Modern • Warm",
         price: "₹5,499",
-        emoji: "💡"
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c"
     }
 
+    
 ];
 
 
@@ -79,7 +80,9 @@ function showFurniture() {
 
     furnitureCategory.textContent = item.category;
 
-    furnitureImage.textContent = item.emoji;
+    furnitureImage.innerHTML = `
+    <img src="${item.image}" alt="${item.name}">
+`;
 
 }
 
