@@ -93,7 +93,7 @@ likeButton.addEventListener("click", function() {
 
     console.log("Liked:", item.name);
 
-    nextFurniture();
+    animateCard("right");
 
 });
 
@@ -105,11 +105,35 @@ dislikeButton.addEventListener("click", function() {
 
     console.log("Disliked:", item.name);
 
-    nextFurniture();
+    animateCard("left");
 
 });
 
+// Animate furniture card
+function animateCard(direction) {
 
+    const card = document.querySelector(".furniture-card");
+
+    if (direction === "left") {
+
+        card.classList.add("swipe-left");
+
+    } else {
+
+        card.classList.add("swipe-right");
+
+    }
+
+    setTimeout(function() {
+
+        card.classList.remove("swipe-left");
+        card.classList.remove("swipe-right");
+
+        nextFurniture();
+
+    }, 400);
+
+}
 // Show next furniture
 function nextFurniture() {
 
