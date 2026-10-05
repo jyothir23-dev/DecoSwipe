@@ -73,3 +73,125 @@ nav {
     transform: translateY(-3px);
     opacity: 0.85;
 }
+
+/* Explore Section */
+
+.explore {
+    min-height: 100vh;
+    padding: 100px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #8a7770;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #777;
+    line-height: 1.6;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 16px 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px 0 0 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 16px 25px;
+    border: none;
+    background: #2d2926;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+.furniture-card {
+    width: 350px;
+    margin: auto;
+    background: #f8f5f2;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.furniture-image {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background: #eee7e1;
+}
+
+.furniture-info {
+    padding: 25px;
+}
+
+.furniture-category {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #8a7770;
+}
+
+.furniture-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.furniture-style {
+    color: #777;
+}
+
+.furniture-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.swipe-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 25px 30px;
+}
+
+.swipe-buttons button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.swipe-buttons button:hover {
+    transform: scale(1.1);
+}
