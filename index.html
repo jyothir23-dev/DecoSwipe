@@ -12,16 +12,19 @@
 
 <body>
 
+    <!-- Navigation -->
     <nav>
         <div class="logo">DecoSwipe</div>
 
         <div class="nav-links">
             <a href="#">Home</a>
-            <a href="#">Explore</a>
-            <a href="#">Design Room</a>
+            <a href="#explore">Explore</a>
+            <a href="#explore">Design Room</a>
         </div>
     </nav>
 
+
+    <!-- Hero Section -->
     <section class="hero">
 
         <div class="hero-content">
@@ -40,74 +43,98 @@
         </div>
 
     </section>
+
+
+    <!-- Furniture Explore Section -->
     <section class="explore" id="explore">
 
-    <div class="section-heading">
-        <p class="small-title">EXPLORE FURNITURE</p>
+        <div class="section-heading">
 
-        <h2>Find pieces you'll love.</h2>
-
-        <p>
-            Search for furniture and swipe through different styles
-            to find what fits your dream room.
-        </p>
-    </div>
-
-    <div class="search-box">
-
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔍 Search furniture...">
-
-        <button id="searchButton">
-            Search
-        </button>
-
-    </div>
-
-    <div class="furniture-card">
-
-        <div class="furniture-image">
-            🛋️
-        </div>
-
-        <div class="furniture-info">
-
-            <span class="furniture-category">
-                SOFA
-            </span>
-
-            <h3 id="furnitureName">
-                Modern Comfort Sofa
-            </h3>
-
-            <p id="furnitureStyle">
-                Modern • Minimalist
+            <p class="small-title">
+                EXPLORE FURNITURE
             </p>
 
-            <p class="furniture-price">
-                ₹24,999
+            <h2>
+                Find pieces you'll love.
+            </h2>
+
+            <p>
+                Search for furniture and swipe through different styles
+                to find what fits your dream room.
             </p>
 
         </div>
 
-        <div class="swipe-buttons">
 
-            <button class="dislike-btn" id="dislikeBtn">
-                ❌
-            </button>
+        <!-- Search -->
+        <div class="search-box">
 
-            <button class="like-btn" id="likeBtn">
-                ❤️
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search furniture..."
+            >
+
+            <button id="searchButton">
+                Search
             </button>
 
         </div>
 
-    </div>
 
-</section>
+        <!-- Furniture Card -->
+        <div class="furniture-card">
+
+            <div class="furniture-image">
+                🛋️
+            </div>
+
+            <div class="furniture-info">
+
+                <span class="furniture-category">
+                    SOFA
+                </span>
+
+                <h3 id="furnitureName">
+                    Modern Comfort Sofa
+                </h3>
+
+                <p id="furnitureStyle">
+                    Modern • Minimalist
+                </p>
+
+                <p class="furniture-price">
+                    ₹24,999
+                </p>
+
+            </div>
+
+
+            <!-- Swipe Buttons -->
+            <div class="swipe-buttons">
+
+                <button
+                    class="dislike-btn"
+                    id="dislikeBtn">
+                    ❌
+                </button>
+
+                <button
+                    class="like-btn"
+                    id="likeBtn">
+                    ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
