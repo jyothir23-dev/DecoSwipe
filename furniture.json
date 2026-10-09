@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Modern Comfort Sofa",
+        "category": "SOFA",
+        "style": "Modern • Minimalist",
+        "price": "₹24,999",
+        "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc"
+    },
+    {
+        "name": "Luxury Velvet Sofa",
+        "category": "SOFA",
+        "style": "Luxury • Elegant",
+        "price": "₹32,999",
+        "image": "https://images.unsplash.com/photo-1550254478-ead40cc54513"
+    },
+    {
+        "name": "Scandinavian Lounge Chair",
+        "category": "CHAIR",
+        "style": "Scandinavian • Cozy",
+        "price": "₹12,499",
+        "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c"
+    },
+    {
+        "name": "Minimal Coffee Table",
+        "category": "TABLE",
+        "style": "Minimalist • Modern",
+        "price": "₹8,999",
+        "image": "https://images.unsplash.com/photo-1532372320572-cda25653a26d"
+    },
+    {
+        "name": "Modern Floor Lamp",
+        "category": "LIGHTING",
+        "style": "Modern • Warm",
+        "price": "₹5,499",
+        "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c"
+    }
+]

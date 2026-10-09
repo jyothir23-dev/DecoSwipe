@@ -220,3 +220,839 @@ nav {
     object-fit: cover;
     display: block;
 }
+
+
+/* ===== DecoSwipe Premium UI Upgrade ===== */
+
+body {
+    background: #faf7f2;
+    color: #302923;
+}
+
+nav {
+    padding: 22px 7%;
+    background: rgba(255, 255, 255, 0.96);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 25px rgba(48, 41, 35, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #74513d;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #51473f;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #b17b58;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(120deg, #f2e7da, #fbf7f1 65%, #ead8c6);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    color: #392c23;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #77695e;
+    max-width: 520px;
+}
+
+.start-btn {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 15px 28px;
+    border-radius: 30px;
+    background: #74513d;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.start-btn:hover {
+    background: #533927;
+    transform: translateY(-3px);
+}
+
+.explore {
+    background: #faf7f2;
+    padding: 85px 20px;
+}
+
+.section-heading h2 {
+    color: #392c23;
+    letter-spacing: -1px;
+}
+
+.search-box {
+    max-width: 560px;
+}
+
+.search-box input {
+    background: white;
+    border-color: #e8ded4;
+    box-shadow: 0 5px 20px rgba(48, 41, 35, 0.04);
+}
+
+.search-box button {
+    background: #74513d;
+    transition: background 0.25s ease;
+}
+
+.search-box button:hover {
+    background: #533927;
+}
+
+.furniture-card {
+    border: 1px solid #eee5dc;
+    box-shadow: 0 18px 45px rgba(73, 54, 39, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.furniture-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 55px rgba(73, 54, 39, 0.16);
+}
+
+.furniture-image {
+    background: #eee4d9;
+}
+
+.furniture-image img {
+    transition: transform 0.5s ease;
+}
+
+.furniture-card:hover .furniture-image img {
+    transform: scale(1.04);
+}
+
+.furniture-info h3 {
+    color: #392c23;
+}
+
+.furniture-price {
+    color: #74513d;
+}
+
+.swipe-buttons button {
+    box-shadow: 0 4px 14px rgba(48, 41, 35, 0.06);
+}
+
+.dislike-btn,
+.like-btn {
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.recommendation-box {
+    max-width: 500px;
+    margin: 20px auto 70px;
+    padding: 30px;
+    text-align: center;
+    background: #efe3d6;
+    border: 1px solid #e4d3c2;
+    border-radius: 22px;
+}
+
+.recommendation-box p {
+    color: #806653;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.recommendation-box h3 {
+    color: #392c23;
+    font-size: 23px;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 65px 7%;
+        min-height: 430px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .recommendation-box {
+        margin: 20px;
+    }
+}
+
+/* DecoSwipe — Luxury Editorial Hero */
+
+.hero {
+    min-height: 620px;
+    padding: 90px 9%;
+    background-color: #d9c9b8;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(28, 23, 19, 0.78) 0%,
+            rgba(28, 23, 19, 0.48) 48%,
+            rgba(28, 23, 19, 0.08) 100%
+        ),
+        url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    color: #fffaf4;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(46px, 6vw, 78px);
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    color: #f2e8de;
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 490px;
+}
+
+.hero .start-btn {
+    background: #f4e7d7;
+    color: #392c23;
+    padding: 16px 30px;
+    border-radius: 3px;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+.hero .start-btn:hover {
+    background: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 520px;
+        padding: 65px 7%;
+        background-position: 58% center;
+    }
+}
+
+
+/* ===== Luxury Furniture Discovery ===== */
+
+.explore {
+    padding: 100px 20px 80px;
+    background: #faf7f2;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.small-title {
+    color: #9a7458;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(34px, 4vw, 50px);
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #30271f;
+    margin-bottom: 18px;
+}
+
+.section-heading > p:last-child {
+    color: #80766d;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.search-box {
+    max-width: 570px;
+    margin: 0 auto 45px;
+    gap: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 17px 22px;
+    background: #fff;
+    border: 1px solid #e7ddd2;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #392c23;
+}
+
+.search-box input:focus {
+    border-color: #9a7458;
+    box-shadow: 0 0 0 3px rgba(154, 116, 88, 0.1);
+}
+
+.search-box button {
+    padding: 16px 27px;
+    border-radius: 4px;
+    background: #49372a;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.furniture-card {
+    width: min(410px, 92vw);
+    margin: 0 auto 45px;
+    border: 1px solid #eee5dc;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(53, 40, 29, 0.07);
+    overflow: hidden;
+}
+
+.furniture-image {
+    height: 370px;
+    background: #f0e9e1;
+    overflow: hidden;
+}
+
+.furniture-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.furniture-card:hover .furniture-image img {
+    transform: scale(1.035);
+}
+
+.furniture-info {
+    padding: 25px 28px 10px;
+}
+
+.furniture-category {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #a17a5b;
+}
+
+.furniture-info h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #30271f;
+    margin: 9px 0;
+}
+
+#furnitureStyle {
+    color: #8b8178;
+    font-size: 13px;
+}
+
+.furniture-price {
+    font-size: 19px;
+    font-weight: 600;
+    color: #49372a;
+}
+
+.swipe-buttons {
+    gap: 18px;
+    padding: 18px 25px 28px;
+}
+
+.swipe-buttons button {
+    width: 55px;
+    height: 55px;
+    background: #faf7f2;
+    border: 1px solid #eee3d7;
+    box-shadow: none;
+}
+
+.dislike-btn:hover {
+    background: #f8e9e4;
+}
+
+.like-btn:hover {
+    background: #e9f0e4;
+}
+
+.recommendation-box {
+    max-width: 450px;
+    padding: 35px 25px;
+    background: #f0e7dc;
+    border: none;
+    border-radius: 4px;
+}
+
+.recommendation-box h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+@media (max-width: 480px) {
+    .explore {
+        padding: 70px 16px;
+    }
+
+    .furniture-image {
+        height: 320px;
+    }
+
+    .search-box {
+        gap: 6px;
+    }
+
+    .search-box input {
+        min-width: 0;
+        padding: 14px 12px;
+    }
+
+    .search-box button {
+        padding: 14px 16px;
+    }
+}
+
+
+/* Elegant inline search feedback */
+.search-message {
+    min-height: 22px;
+    margin: -30px auto 25px;
+    color: #9a6048;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.search-message:empty {
+    display: none;
+}
+
+
+/* ===== DecoSwipe Wishlist ===== */
+
+.wishlist-section {
+    padding: 85px 20px 100px;
+    background: #fffdf9;
+}
+
+.wishlist-section .section-heading {
+    margin-bottom: 35px;
+}
+
+.wishlist-items {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.wishlist-empty {
+    grid-column: 1 / -1;
+    padding: 35px 20px;
+    text-align: center;
+    color: #8b8178;
+    background: #faf5ee;
+    border: 1px dashed #dfcdbb;
+    font-size: 14px;
+}
+
+.wishlist-card {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #eee5dc;
+    box-shadow: 0 8px 25px rgba(53, 40, 29, 0.06);
+    transition: transform 0.25s ease;
+}
+
+.wishlist-card:hover {
+    transform: translateY(-4px);
+}
+
+.wishlist-card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.wishlist-card-info {
+    padding: 18px;
+}
+
+.wishlist-card-info .wishlist-category {
+    color: #a17a5b;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.wishlist-card-info h3 {
+    margin: 9px 0;
+    color: #30271f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.wishlist-card-info p {
+    color: #80766d;
+    font-size: 13px;
+}
+
+.wishlist-card-info .wishlist-price {
+    margin-top: 12px;
+    color: #49372a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.wishlist-remove {
+    margin-top: 16px;
+    padding: 10px 14px;
+    background: transparent;
+    border: 1px solid #dfcdbb;
+    color: #795b46;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.wishlist-remove:hover {
+    background: #49372a;
+    color: #fffaf4;
+    border-color: #49372a;
+}
+
+
+.clear-wishlist {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 12px 20px;
+    background: transparent;
+    border: 1px solid #dfcdbb;
+    color: #795b46;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.clear-wishlist:hover {
+    background: #49372a;
+    color: #fffaf4;
+}
+
+
+/* ===== DecoSwipe Design Room ===== */
+
+.design-room {
+    padding: 90px 20px 100px;
+    background: #f3ece3;
+}
+
+.design-room .section-heading {
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.room-upload {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#roomImageInput {
+    display: none;
+}
+
+.upload-label {
+    min-height: 150px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #fffdf9;
+    border: 1px dashed #b9a18b;
+    color: #49372a;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s ease;
+}
+
+.upload-label:hover {
+    background: #fdf4e9;
+}
+
+.upload-label > span:nth-child(2) {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+}
+
+.upload-label small {
+    color: #8b8178;
+    font-size: 12px;
+}
+
+.upload-icon {
+    font-size: 30px;
+    color: #a17a5b;
+}
+
+.room-canvas {
+    position: relative;
+    min-height: 350px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #e8ded2;
+    border: 1px solid #dfcdbb;
+    color: #80766d;
+    text-align: center;
+}
+
+.room-canvas > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .design-room {
+        padding: 65px 16px;
+    }
+
+    .room-canvas {
+        min-height: 250px;
+    }
+
+    .upload-label {
+        padding: 25px 15px;
+    }
+}
+
+/* ===== Design Room Furniture Controls ===== */
+
+.room-furniture-controls {
+    margin-top: 30px;
+    padding: 28px;
+    background: #fffdf9;
+    border: 1px solid #e5d7c8;
+    text-align: center;
+}
+
+.room-furniture-controls h3 {
+    margin-bottom: 10px;
+    color: #30271f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.room-furniture-controls p {
+    margin-bottom: 20px;
+    color: #80766d;
+    font-size: 13px;
+}
+
+#roomFurnitureSelect {
+    width: min(100%, 350px);
+    padding: 13px;
+    margin-right: 8px;
+    border: 1px solid #dfcdbb;
+    background: #fff;
+    color: #49372a;
+    font-size: 14px;
+}
+
+#addFurnitureBtn {
+    padding: 14px 22px;
+    border: 1px solid #49372a;
+    background: #49372a;
+    color: #fffaf4;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#addFurnitureBtn:hover {
+    background: #795b46;
+}
+
+.room-canvas .room-background {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.room-canvas .placed-furniture {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    z-index: 2;
+    width: 160px;
+    max-width: 35%;
+    height: auto;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+}
+
+@media (max-width: 600px) {
+    #roomFurnitureSelect {
+        margin: 0 0 12px;
+    }
+
+    #addFurnitureBtn {
+        display: block;
+        width: 100%;
+    }
+
+    .room-furniture-controls {
+        padding: 22px 15px;
+    }
+}
+
+/* Furniture Resize Controls */
+
+.furniture-resize-controls {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: #fffdf9;
+    border: 1px solid #dfcdbb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.furniture-resize-controls button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #49372a;
+    color: #fffaf4;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.furniture-resize-controls button:hover {
+    background: #795b46;
+}
+
+.furniture-resize-controls span {
+    min-width: 42px;
+    text-align: center;
+    color: #49372a;
+    font-size: 12px;
+}
+
+/* Remove Furniture from Room */
+
+.remove-placed-furniture {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d9b6aa;
+    background: #fff1ed;
+    color: #a43d2e;
+    font-size: 21px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.remove-placed-furniture:hover {
+    background: #a43d2e;
+    color: white;
+}
+
+/* Furniture Rotation Controls */
+
+.rotate-furniture-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dfcdbb;
+    background: #f3ece3;
+    color: #49372a;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.rotate-furniture-btn:hover {
+    background: #dfcdbb;
+}
+
+
+/* ===== DecoSwipe Card Animations ===== */
+
+.furniture-card {
+    position: relative;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.furniture-card.swipe-left {
+    transform: translateX(-150%) rotate(-15deg) !important;
+    opacity: 0 !important;
+}
+
+.furniture-card.swipe-right {
+    transform: translateX(150%) rotate(15deg) !important;
+    opacity: 0 !important;
+}

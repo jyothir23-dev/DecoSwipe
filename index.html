@@ -32,9 +32,14 @@
                 Explore
             </a>
 
-            <a href="#explore">
+            <a href="#designRoom">
                 Design Room
             </a>
+			
+            <a href="#wishlist">
+			    My Wishlist (<span id="wishlistCount">0</span>)
+			</a>
+
 
         </div>
 
@@ -99,6 +104,9 @@
             </button>
 
         </div>
+		
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+
 
 
         <!-- Furniture Card -->
@@ -150,10 +158,77 @@
 
     </section>
 
+    <!-- Recommendation -->
+    <div class="recommendation-box">
+
+         <p>Your Interior Style</p>
+
+         <h3 id="recommendedStyle">Like some furniture to get a recommendation ✨</h3>
+
+    </div>
+	
+<!-- My Wishlist -->
+<section class="wishlist-section" id="wishlist">
+    <div class="section-heading">
+        <p class="small-title">YOUR COLLECTION</p>
+        <h2>Pieces you love.</h2>
+        <p>Your favourite finds, all in one place.</p>
+    </div>
+	
+	<button id="clearWishlist" class="clear-wishlist">
+        Clear Wishlist
+    </button>
+
+    <div id="wishlistItems" class="wishlist-items">
+        <p class="wishlist-empty">Your wishlist is waiting for its first favourite 🤎</p>
+    </div>
+</section>
+
+
+<!-- Design Room -->
+<section class="design-room" id="designRoom">
+    <div class="section-heading">
+        <p class="small-title">YOUR SPACE, YOUR STYLE</p>
+        <h2>Design your room.</h2>
+        <p>Bring your favourite pieces together and imagine your dream space.</p>
+    </div>
+
+    <div class="room-upload">
+        <label for="roomImageInput" class="upload-label">
+            <span class="upload-icon">＋</span>
+            <span>Upload your room photo</span>
+            <small>Choose a bedroom or living room image</small>
+        </label>
+
+        <input
+            type="file"
+            id="roomImageInput"
+            accept="image/*"
+        >
+
+        <div id="roomCanvas" class="room-canvas">
+            <p>Your room preview will appear here.</p>
+        </div>
+    </div>
+	
+<div class="room-furniture-controls">
+    <h3>Add your favourite furniture</h3>
+    <p>Choose a piece from your wishlist to style your room.</p>
+
+    <select id="roomFurnitureSelect">
+        <option value="">Choose furniture...</option>
+    </select>
+
+    <button id="addFurnitureBtn" type="button">
+        Add to room
+    </button>
+</div>
+
+</section>
+
+
 
     <!-- JavaScript -->
     <script src="./js/main.js"></script>
-
-</body>
 
 </html>
